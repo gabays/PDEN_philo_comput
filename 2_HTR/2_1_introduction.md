@@ -210,3 +210,13 @@ Exercice:
 1. utiliser IIIF: ark:/12148/bpt6k1280589b/
 2. Installez l'add-on IIIF si vous avez Firefox: https://addons.mozilla.org/fr/firefox/addon/iiif-download/
 3. Créer un projet sur eScriptorium et importer le fichier via IIIF
+
+---
+
+## Charger les documents
+
+Dans le dossier `2_1_introduction_exercice` se trouvent dix lots contenant chacun une mazarinade au format pdf et un lien vers son *manifest* IIIF. 
+
+- Commencer par vous répartir les documents (un par personne) ;
+- Essayer dans un premier temps de charger le document via IIIF (le `manifest` se trouve dans le README.md) ;
+- Si ça ne fonctionne pas, charger le document au format pdf.

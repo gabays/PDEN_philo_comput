@@ -609,4 +609,99 @@ Suggested values include:
 
 ---
 
-# Exercice
+# Exercice : créer un nouveau document
+
+---
+## La description du document (1)
+
+Après avoir cliqué sur `Create new Document`, plusieurs éléments sont à préciser dans la partie *Description* :
+- commencer par donner un nom à votre document ;
+- *Main script* : Latin ;
+- *Read direction* : *Left to Right* ;
+- *Line offset* : *Baseline*
+- *Metadata* : les métadonnées sont remplies automatiquement si vous choisissez de charger votre document via IIIF.
+
+---
+## La description du document
+
+![100% center](img_tuto/Description.png)
+
+---
+## Métadonnées remplies automatiquement via IIIF
+
+![80% center](img_tuto/Metadata_iiif.png)
+
+---
+## La description du document (2)
+
+La dernière étape consiste à mettre à jour l'ontologie du document afin qu'elle corresponde à celle des deux modèles précédemment chargés :
+
+*Region types* :
+- ajouter manuellement *CustomZone*, *DamageZone*, *DigitizationArtefactZone*, *DropCapitalZone*, *GraphicZone*, *MainZone*, *MarginTextZone*, *MusicZone*, *NumberingZone*, *QuireMarksZone*, *SealZone*, *StampZone*, *TableZone* et *TitlePageZone* (15 éléments au total).
+
+*Line types* :
+- ajouter manuellement *CustomLine*, *DefaultLine*, *DropCapitalLine*, *InterlinearLine*, *MusicLine* and *RubricLine* (6 éléments au total).
+- Enfin, appuyer sur `Create`.
+
+---
+## L'ontologie
+
+![80% center](img_tuto/Ontology.png)
+
+---
+
+## La segmentation des images
+
+---
+## Images
+
+![100% center](img_tuto/Images.png)
+
+---
+
+## Regions
+
+- Commencer par sélectionner l'ensemble des images que vous souhaitez segmenter ;
+- Cliquer sur `Segment`;
+- Le `Model` à utiliser est le modèle de segmentation par défaut (`blla.mlmodel`) ;
+- Sélectionner `Regions` dans `Segmentation steps` ;
+- Lancer la segmentation et patienter.
+
+---
+## Paramètres pour la segmentation par régions
+
+![50% center](img_tuto/Segment_regions.png)
+
+---
+## Exemple de résultat
+
+![80% center](img_tuto/Segment_sans_correction.png)
+
+---
+## Corrections
+
+- Vous pouvez à présent consulter les résultats de la segmentation en cliquant sur `Edit`.
+- Le modèle par défaut n'étant pas familier de l'ontologie que nous souhaitons utiliser, il reste à associer chacune des zones repérées à la bonne terminologie.
+- Il se peut qu'il soit nécessaire de redéfinir certaines zones, pour cela cliquer sur le petit ciseau pour passer en mode *édition*.
+
+
+---
+## Lines
+
+Il reste à présent à repérer les lignes du document :
+- sélectionner les images ;
+- cliquer sur `Segment` ;
+- le `Model` à utiliser est le modèle par défaut ;
+- sélectionner `Lines Baselines and Masks` dans `Segmentation steps` ;
+- lancer la segmentation ;
+- vérifier que les lignes ont bien été reconnues.
+
+N.B. : il est important de commencer par segmenter les pages par régions puis par lignes afin que ces dernières soient automatiquement associées à leurs zones.
+
+---
+## Corrections
+
+- Vous pouvez à présent consulter les résultats de la segmentation en cliquant sur `Edit`.
+- Le modèle par défaut n'étant pas familier de l'ontologie que nous souhaitons utiliser, il reste à associer chacune des lignes repérées à la bonne terminologie.
+- Il se peut qu'il soit nécessaire de retracer certaines lignes, pour cela cliquer sur le petit ciseau pour passer en mode *édition*.
+
