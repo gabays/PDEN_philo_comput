@@ -210,7 +210,6 @@ Kiessling, B., Stökl Ben Ezra, D., Miller M., "BADAM: A Public Dataset for Base
 
 Kiessling, B.; Tissot, R., Stökl Ben Ezra, D., Stokes P. "eScriptorium: An Open Source Platform for Historical Document Analysis", _OST@ICDAR_ 2019 (2019) [https://ieeexplore.ieee.org/document/8893029](https://ieeexplore.ieee.org/document/8893029/)
 
-
 ---
 
 ## _Pipeline_
